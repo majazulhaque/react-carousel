@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.container img {
+  width: 100%;
+  height: 350px;
+  border: 1px solid gray;
+}
+.left-btn {
+  position: absolute;
+  left: 1rem;
+  border: 1px solid gray;
+  background-color: black;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+.left-btn::before {
+  content: "<";
+}
+
+.right-btn {
+  position: absolute;
+  right: 1rem;
+  border: 1px solid gray;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+.right-btn::before {
+  content: ">";
+}
+
+.carousel-list {
+  min-width: 100%;
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.image-card {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.image-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.active {
+  border: 2px solid blue;
+}
